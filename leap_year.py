@@ -30,7 +30,10 @@ def main():
                     print("This is not a leap year")
         else:
             # Output
-            print("This is not a leap year")
+            if leap_year % 4:
+                print("This is a leap year")
+            else:
+                print("This is not a leap year")
     except Exception:
         # Output
         print("This isn't a valid year")
